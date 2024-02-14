@@ -1,0 +1,8 @@
+- render(): Renders the todo list based on the current state and filter settings.
+- addTodo(event): Adds a new todo item to the state when the user submits the todo form.
+- removeTasks(): Removes all completed todos from the state.
+- updateStateFilter(): Updates the filter state based on the active filter button selected by the user.
+- loadTasksLocalStorage(): Loads tasks from the browser's local storage when the app initializes.
+- saveTasksLocalStorage(): Saves tasks to the browser's local storage whenever there's a change in the todo list.
+- removeDuplicateTasks(): Removes duplicate tasks from the state before rendering the todo list.
+- showMessage(message): Shows a message to the user, indicating the presence of duplicate tasks or other notifications.

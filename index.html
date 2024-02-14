@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Todo App</h1>
+
+        <form id="todoForm">
+            <input type="text" id="todoInput" placeholder="Add a new todo" minlength="5">
+            <button type="submit" id="addTodoBtn">Add Todo</button>
+        </form>
+
+        <!-- Radio buttons for filtering todos -->
+        <div>
+            <input type="radio" id="allTodos" name="filter" value="all" checked>
+            <label for="allTodos">All Todos</label>
+            <input type="radio" id="openTodos" name="filter" value="open">
+            <label for="openTodos">Open Todos</label>
+            <input type="radio" id="doneTodos" name="filter" value="done">
+            <label for="doneTodos">Done Todos</label>
+        </div>
+
+        <ul id="todoList"></ul>
+        <button id="removeDoneBtn">Remove Done Todos</button>
+    </div>
+
+    <!-- Placeholder for the message -->
+    <div id="messageContainer"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
